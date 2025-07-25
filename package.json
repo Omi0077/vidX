@@ -9,7 +9,8 @@
     "tailwind": "npx @tailwindcss/cli -i ./views/input.css -o ./public/output.css --watch",
     "build:css": "npx @tailwindcss/cli -i ./views/input.css -o ./public/output.css",
     "build": "npm run build:css",
-    "start": "node app.js"
+    "start": "node app.js",
+    "postinstall": "npx puppeteer browsers install chrome"
   },
   "author": "om",
   "license": "ISC",
