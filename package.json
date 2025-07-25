@@ -4,10 +4,12 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind": "npx @tailwindcss/cli -i ./views/input.css -o ./public/output.css --watch",
+    "dev": "concurrently \"npm run server\" \"npm run tailwind\"",
     "server": "nodemon app.js",
-    "start": "concurrently \"npm run server\" \"npm run tailwind\""
+    "tailwind": "npx @tailwindcss/cli -i ./views/input.css -o ./public/output.css --watch",
+    "build:css": "npx @tailwindcss/cli -i ./views/input.css -o ./public/output.css",
+    "build": "npm run build:css",
+    "start": "node app.js"
   },
   "author": "om",
   "license": "ISC",
