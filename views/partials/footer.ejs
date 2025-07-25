@@ -1,0 +1,15 @@
+<footer class="mt-12 bg-gradient-to-r from-purple-900 to-indigo-900 text-gray-300">
+    <div
+      class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <p class="text-sm">&copy; <span id="year"></span> <span class="text-purple-300 font-semibold">vidX</span>. All rights reserved.</p>
+      <div class="flex space-x-6 text-sm">
+        <a href="#" class="hover:text-purple-400 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-purple-400 transition">Terms of Service</a>
+        <a href="/contact-us" class="hover:text-purple-400 transition">Contact-Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>

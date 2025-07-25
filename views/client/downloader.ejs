@@ -1,0 +1,62 @@
+<%- include('../partials/head') %>
+
+  <script src="/js/index.js"></script>
+  </head>
+
+  <body class="bg-gray-900 font-sans text-gray-100 min-h-screen">
+    <%- include('../partials/navbar') %>
+
+      <main class="flex flex-col items-center justify-center px-4 py-12 md:py-20 space-y-12">
+        <!-- Hero + Form Section -->
+        <%- include('../partials/linkForm', {errors: errors}) %>
+
+
+
+          <!-- About/Details Section -->
+          <section class="w-full max-w-4xl bg-gray-800 rounded-xl shadow-lg p-6 sm:p-10">
+            <h2 class="text-xl sm:text-2xl font-semibold text-purple-400 mb-8 text-center">
+              How to Use vidX
+            </h2>
+
+            <div class="space-y-10">
+              <!-- Step 1 -->
+              <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-6 space-y-4 sm:space-y-0">
+                <div class="text-purple-300 text-3xl font-extrabold sm:text-4xl">1</div>
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold text-purple-200 mb-1">Paste Your Video Link</h3>
+                  <p class="text-gray-300 text-sm sm:text-base max-w-xl">
+                    Copy the URL of the video from YouTube, Instagram, Twitter, etc., and paste it into the input box
+                    above.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-6 space-y-4 sm:space-y-0">
+                <div class="text-purple-300 text-3xl font-extrabold sm:text-4xl">2</div>
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold text-purple-200 mb-1">Click Download</h3>
+                  <p class="text-gray-300 text-sm sm:text-base max-w-xl">
+                    Press the "Download" button. Our system will fetch and process your video link.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-6 space-y-4 sm:space-y-0">
+                <div class="text-purple-300 text-3xl font-extrabold sm:text-4xl">3</div>
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold text-purple-200 mb-1">Save the Video</h3>
+                  <p class="text-gray-300 text-sm sm:text-base max-w-xl">
+                    Once the video is ready, a download link will appear. Click it to save the file to your device.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+      </main>
+      <%- include('../partials/footer') %>
+  </body>
+
+  </html>

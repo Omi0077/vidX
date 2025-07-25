@@ -1,0 +1,36 @@
+<%- include('../partials/head') %>
+
+  <script src="/js/index.js"></script>
+</head>
+
+<body class="bg-gray-900 font-sans text-gray-100 min-h-screen">
+<%- include('../partials/navbar') %>
+  
+  <main class="flex flex-col items-center justify-center px-4 py-12 md:py-20 space-y-12">
+    <!-- Hero + Form Section -->
+<%- include('../partials/linkForm', {errors: errors}) %>
+    
+
+    <!-- About/Details Section -->
+    <section class="w-full max-w-4xl bg-gray-800 rounded-xl shadow-lg p-6 sm:p-10">
+      <h2 class="text-xl sm:text-2xl font-semibold text-purple-400 mb-4 text-center">
+        Why Choose vidX?
+      </h2>
+      <ul class="space-y-4 text-gray-300 text-sm sm:text-base leading-relaxed">
+        <!-- <li><span class="text-purple-300 font-medium">🔗 Wide Compatibility:</span> Supports downloading videos from
+          YouTube, Instagram, Twitter, Facebook, and many more platforms.</li> -->
+        <li><span class="text-purple-300 font-medium">⚡ Fast & Lightweight:</span> Optimized for speed and minimal
+          bandwidth usage, ensuring quick downloads.</li>
+        <li><span class="text-purple-300 font-medium">🔒 Privacy First:</span> No tracking, no data collection — your
+          URLs and downloads stay private.</li>
+        <li><span class="text-purple-300 font-medium">📱 Mobile Friendly:</span> Works smoothly across all devices,
+          including phones, tablets, and desktops.</li>
+        <li><span class="text-purple-300 font-medium">🎯 Easy to Use:</span> Just paste the link and hit "Download". No
+          ads, no distractions.</li>
+      </ul>
+    </section>
+  </main>
+<%- include('../partials/footer') %>
+</body>
+
+</html>

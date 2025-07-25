@@ -1,0 +1,49 @@
+<%- include('../partials/head') %>
+  <script src="/js/contact.js"></script>
+  </head>
+
+  <body class="bg-gray-900 font-sans text-gray-100 flex flex-col min-h-screen">
+    <%- include('../partials/navbar') %>
+
+      <main class="flex-grow flex flex-col items-center justify-center px-4 py-12 md:py-20">
+
+        <section class="w-full max-w-xl bg-gray-800 rounded-2xl shadow-2xl p-8 sm:p-10 space-y-8">
+          <h2 class="text-3xl font-bold text-purple-400 text-center">Contact Us</h2>
+          <div id="errBox"
+            class="hidden mb-6 w-full text-left bg-red-800/40 border border-red-600 text-red-300 rounded-lg p-4 space-y-2">
+          </div>
+
+          <form id="contactForm" class="space-y-6">
+            <div class="flex flex-col">
+              <label for="email" class="text-sm text-gray-300 mb-2">Your Email</label>
+              <input type="email" id="email" name="email" required
+                class="rounded-lg px-4 py-3 bg-gray-700 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                placeholder="you@example.com" />
+            </div>
+
+            <div class="flex flex-col">
+              <label for="subject" class="text-sm text-gray-300 mb-2">Subject</label>
+              <input type="text" id="subject" name="subject" required
+                class="rounded-lg px-4 py-3 bg-gray-700 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                placeholder="Subject of your message" />
+            </div>
+
+            <div class="flex flex-col">
+              <label for="message" class="text-sm text-gray-300 mb-2">Message</label>
+              <textarea id="message" name="message" rows="6" required
+                class="rounded-lg px-4 py-3 bg-gray-700 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"
+                placeholder="Type your message here..."></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn"
+              class="w-full bg-purple-600 hover:bg-purple-700 transition duration-200 py-3 px-4 rounded-lg font-semibold text-white shadow-md">
+              ✉️ Send Message
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <%- include('../partials/footer') %>
+  </body>
+
+  </html>
